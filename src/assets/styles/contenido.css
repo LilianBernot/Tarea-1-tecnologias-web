@@ -1,0 +1,91 @@
+h2{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 2em;
+}
+h3{
+    font-weight: bold;
+    text-align: center;
+}
+h4{
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.intro p{
+    font-size: 1.3em;
+}
+.intro a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.intro a:hover{
+    font-weight: bold;
+}
+
+.link_image{
+    width: 0.8em;
+}
+
+.receta .retour_intro{
+    text-align: center;
+}
+.receta .retour_intro a{
+    color: black;
+    /* text-decoration: none; */
+}
+.receta .retour_intro a:hover{
+    font-weight: bold;
+}
+
+.receta{
+    background-color: rgb(255, 255, 255);
+    border-radius: 1em;
+    padding: 0.5em 1em 1em 1em;
+    margin-top: 2em;
+}
+.receta .column_left {
+    display: table-cell;
+    text-align: center;
+    width: 45%;
+    vertical-align: middle;
+}
+.receta .column_right {
+    display: table-cell;
+    width: 55%;
+    padding: 10px;
+}
+.flottant
+{
+    float: left; 
+    width:100%;
+    border-radius: 20%;
+}
+
+.preparacion{
+    padding: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    .receta .column_left {
+        display: table-row;
+        width: 100%;
+    }
+    .receta .column_right {
+        display: table-row;
+        width: 100%;
+    }
+    .flottant
+    {
+        width: 70%;
+        border-radius: 20%;
+        padding: 0 10% 0 10%;
+    }
+    .ingredientes{
+        padding: 0 10% 0 10%;
+    }
+}
