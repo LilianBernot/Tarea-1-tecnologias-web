@@ -83,7 +83,8 @@ h4{
     {
         width: 70%;
         border-radius: 20%;
-        padding: 0 10% 0 10%;
+        /* margin: 0 30% 0 30%; */
+        float: none;
     }
     .ingredientes{
         padding: 0 10% 0 10%;
