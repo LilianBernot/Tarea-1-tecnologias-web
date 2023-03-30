@@ -4,14 +4,22 @@ body{
 }
 
 h1{
+    margin-top: 2em; /* c'est déguelasse mais c'est parce que sinon la navbar passe au-dessus */
     text-align: center;
 }
 
+header{
+    display: flex;
+  justify-content: center;
+}
 header nav{
     background-color: #666;
-    height: 2.7em;
     justify-content: center;
+    height: 2.7em;
     border-radius: 1em;
+    /* position: fixed; */ /* Si on veut la laisser en haut de la page ! */ 
+    width: 95%;
+    top: 1%;
 }
 
 /* a modifier parce que c'est déguelasse ! */
@@ -57,5 +65,8 @@ footer{
     .contenido{
         width: 1000px;
         margin: auto;
+    }
+    header nav{
+        width: 1000px;
     }
 }

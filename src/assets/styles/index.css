@@ -67,11 +67,56 @@ h4{
     border-radius: 20%;
 }
 
+
+/* Wrapper */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-gap: 5%;
+    /* grid-auto-rows: minmax(100px, auto); */
+    align-items: center; /* centre en hauteur */
+}
+.imagen_grid {
+    text-align: center; /* centre en largeur */
+    grid-column: 1;
+}
+.ingredientes_grid {
+    grid-column: 2;
+}
+
+
+
+
 .preparacion{
     padding: 1em;
 }
 
+@media screen and (min-width: 750px) {
+    .wrapper .flottant
+    {
+        width:80%;
+    }
+}
+
 @media screen and (max-width: 600px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .imagen_grid {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .ingredientes_grid {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .wrapper .flottant
+    {
+        width:50%;
+    }
+
     .receta .column_left {
         display: table-row;
         width: 100%;
