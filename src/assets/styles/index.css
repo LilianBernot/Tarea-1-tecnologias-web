@@ -33,6 +33,13 @@ h4{
 }
 
 /* ----- Receta  ----- */
+.receta{
+    background-color: rgb(255, 255, 255);
+    border-radius: 1em;
+    padding: 0.5em 1em 1em 1em;
+    margin-top: 2em;
+    justify-content: center; /* centre horizontalement */
+}
 .receta .retour_intro{
     text-align: center;
 }
@@ -43,19 +50,13 @@ h4{
 .receta .retour_intro a:hover{
     font-weight: bold;
 }
-.receta{
-    background-color: rgb(255, 255, 255);
-    border-radius: 1em;
-    padding: 0.5em 1em 1em 1em;
-    margin-top: 2em;
-    justify-content: center; /* centre horizontalement */
-}
 
 /* Wrapper */
 
 .wrapper {
     display: grid;
-    grid-template-columns: 45% 55%;
+    /* attention à ce que la somme soit égale à 100% et pas plus ! Sinon ça fait une barre de déroulement */
+    grid-template-columns: 40% 55%;
     grid-gap: 5%;
     /* grid-auto-rows: minmax(100px, auto); */
     align-items: center; /* centre en hauteur */
