@@ -10,7 +10,7 @@ h1{
 
 header{
     display: flex;
-  justify-content: center;
+    justify-content: center;
 }
 header nav{
     background-color: #666;
