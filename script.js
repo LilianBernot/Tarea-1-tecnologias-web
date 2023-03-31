@@ -6,9 +6,6 @@ const imageInput = document.querySelector('#image-input');
 const descriptionInput = document.getElementById('description-input');
 const containerRecetas = document.querySelector('.container_recetas');
 
-
-
-
 function verifyReceta(title, ingredients, image, description) {
     if ( title.length === 0 || ingredients.length === 0 || image === './src/assets/imgs/undefined' || description.length === 0 ) {
         return false
@@ -17,8 +14,6 @@ function verifyReceta(title, ingredients, image, description) {
     }
 }
 
-
-// Save card and add it to the cards section
 addButton.addEventListener('click', () => {
     const title = titleInput.value;
     const ingredients = ingredientsInput.value;
@@ -32,15 +27,8 @@ addButton.addEventListener('click', () => {
         return false;
     }
 
-    // Creamos la carta, notar que más abajo debemos completar la función
-    // createCardElement
     const receta = createRecetaElement(title, ingredients, image, description);
-
-    // TODO: agregar la carta a la sección de cartas (HINT: appendChild)
     containerRecetas.appendChild(receta);
-
-    // TODO: guardar la tarjeta nueva en localStorage
-    // saveCardToLocalStorage(title, image, description);
 
     return true;
 });
@@ -50,9 +38,6 @@ function createRecetaElement(title, ingredients, image, description) {
     const receta = document.createElement('div');
     receta.classList.add('receta');
 
-    // TODO: Modificar el innerHTML de la carta
-    // para mostrar la imagen, título y descripción
-    // aquí pueden usar las clases card-title y card-description del CSS.
     receta.innerHTML = `
         <h2>${title}</h2>
         <div class="wrapper">
