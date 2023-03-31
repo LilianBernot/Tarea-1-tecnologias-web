@@ -32,6 +32,26 @@ h4{
     width: 0.8em;
 }
 
+/*Inputs*/
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+input:focus {
+    border-color: #ff5656;
+}
+
 /* ----- Receta  ----- */
 .receta{
     background-color: rgb(255, 255, 255);
